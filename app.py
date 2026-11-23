@@ -266,7 +266,7 @@ if prompt:
                     history.append(types.Content(role=role, parts=[types.Part.from_text(text=m["content"])]))
 
                 chat = client.chats.create(
-                    model="gemini-2.5-flash",
+                    model="gemini-3.8-flash",
                     history=history,
                     config=types.GenerateContentConfig(
                         system_instruction=system_instruction,
